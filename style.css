@@ -1,0 +1,71 @@
+.bg_container{
+    box-sizing: border-box;
+    height:100vh;
+    width:100vw;
+    background-image: url("./SL-120319-25700-30.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: end;
+    background-size:cover;
+
+}
+
+.Options_container{
+    height: 50vh;
+    width:auto;
+    position: relative;
+    animation:starting_animation 2s;
+
+    
+}
+
+.imagememcard{
+    background-size: cover;
+    height:100px;
+    margin:50px;
+}
+
+.req{
+    color:#dc9a00;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family:French Script MT Regular;
+    transition:font-size 0.5s;
+    text-decoration: none;
+
+}
+
+.req:hover {
+    font-size:60px;
+    filter: drop-shadow(0px 5px 5px #edb32c);
+}
+
+
+
+@keyframes starting_animation{
+ from{
+    opacity: 0;
+    transform: translateX(200px);
+ }
+ to{
+    opacity: 1;
+    transform:translateX(0px);
+ }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .imagememcard{
+        height:70px;
+    }
+
+    .bg_container{
+        align-items: center;
+    }
+    .req{
+        font-size: 40px;
+    }
+  }
